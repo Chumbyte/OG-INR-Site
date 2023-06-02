@@ -1,0 +1,322 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+.default-container {
+    text-align: center;
+    /* font-family: Circular,Helvetica,sans-serif; */
+    /* font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif; */
+    /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; */
+    /* font-family: "Open Sans", "Helvetica Neue","Helvetica", sans-serif; */
+    font-family: "Helvetica Neue","Helvetica", sans-serif;
+    /* font-family: "Roboto", "Oxygen-Sans","Ubuntu","Cantarell","Helvetica Neue", sans-serif; */
+    padding: 3em 10% 0em; /* top bottom, then left right */
+    max-width: 960px;
+    margin: auto;
+    font-size: large;
+  }
+
+
+/*
+##### Hero Section #####
+*/
+
+.title {
+    font-size: 2.2em;
+    /* font-weight: bold; */
+    color: #414141;
+}
+
+.venue {
+    font-size: x-large;
+    /* font-weight: bold; */
+    color: #414141;
+}
+
+/* Author */
+.author-section {
+    padding-bottom: 1em;
+    font-size: large;
+    text-align: center;
+    /* font-weight: bold; */
+}
+
+.author {
+    display: inline-block;
+    height: 120px;
+    padding: 1em 1em; /* top bottom, then left right */
+    text-align: center;
+}
+
+.author a:link, a:visited { 
+    text-decoration: none; 
+    color:dodgerblue}
+
+.author a:hover, a:active  {
+    color: dodgerblue;
+    text-decoration: underline;
+}
+
+.author .image:hover {
+    opacity: 0.5;
+}
+
+.author .image {
+    height: 100%;
+}
+
+/* Affiliation */
+.affiliation a {
+    text-align: center;
+    color:rgba(52, 27, 43, 0.76);
+    padding-top: 10px;
+    padding-bottom: 2px;
+    font-size: large;
+    font-weight: 400;
+}
+
+/* Links */
+.links {
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.link-icon {
+    height: 0.75em;
+    /* opacity: 0.75; */
+    /* background-color: #ffffff; */
+}
+
+/* Button 80 from https://getcssscan.com/css-buttons-examples */
+
+.button-80 {
+  background: rgb(255, 255, 255);
+  backface-visibility: hidden;
+  border-radius: 10rem;
+  border-style: solid;
+  border-width: .125rem;
+  box-sizing: border-box;
+  /* color: #5e5e5e; */
+  color:dodgerblue;
+  display: inline-block;
+  font-family: Circular,Helvetica,sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.3;
+  padding: 0.3rem 0.750rem;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transform: translateZ(0) scale(1);
+  transition: transform .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-80:not(:disabled):hover {
+  transform: scale(1.05);
+}
+
+.button-80:not(:disabled):hover:active {
+  transform: scale(1.05) translateY(.125rem);
+}
+
+.button-80:focus {
+  outline: 0 solid transparent;
+}
+
+.button-80:focus:before {
+  content: "";
+  left: calc(-1*.375rem);
+  pointer-events: none;
+  position: absolute;
+  top: calc(-1*.375rem);
+  transition: border-radius;
+  user-select: none;
+}
+
+.button-80:focus:not(:focus-visible) {
+  outline: 0 solid transparent;
+}
+
+.button-80:focus:not(:focus-visible):before {
+  border-width: 0;
+}
+
+.button-80:not(:disabled):active {
+  transform: translateY(.125rem);
+}
+
+/*
+##### Teaser Results #####
+*/
+
+.srb-vid-column {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.srb-comp-row:after {
+  content: "";
+  display: table;
+  clear: both;
+  margin: auto;
+}
+
+.srb-video {
+  width: 200%    !important;
+  height: auto   !important;
+  margin-top: -10%;
+  margin-bottom: -14%;
+  margin-left: -50%;
+  margin-right: -50%
+}
+
+.scene-row {
+  width: 80%;
+  margin: auto;
+}
+
+.scene-video {
+  /* override other styles to make responsive */
+  width: 120%    !important;
+  height: auto   !important;
+  margin-top: -7%;
+  margin-bottom: -8%;
+  margin-left: -10%;
+  margin-right: -10%
+}
+
+/*
+##### Abstract Section #####
+*/
+
+.abstract-text {
+  text-align: justify;
+  font-size: large;
+}
+
+
+/*
+##### Main Video Section #####
+*/
+
+.main-video-div {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; ; /* 16:9 ratio */
+  overflow: hidden;
+  border-radius: 10px !important; /* for rounded edges */
+}
+.main-video-div iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*
+##### Explanation Section #####
+*/
+
+.explanation{
+  text-align: justify;
+}
+
+.divergence-expl {
+  /* margin-left: auto;
+     margin-right: auto; */
+  /* width: 100%; */
+  text-align: center;
+}
+
+.divergence-expl-img {
+  display: block;
+  max-width: 100%;
+  margin: auto;
+}
+
+.geom-init-row {
+  text-align: center;
+}
+
+.geom-init-column {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.geom-init-row:after {
+  content: "";
+  display: table;
+  clear: both;
+  margin: auto;
+}
+
+.init-img {
+  width: 100%    !important;
+  height: auto   !important;
+  /* margin-top: -10%;
+  margin-bottom: -14%;
+  margin-left: -50%;
+  margin-right: -50% */
+}
+
+.anchor-training-row {
+  text-align: center;
+  width: 100%;
+}
+
+.anchor-training-image {
+  width: 80%;
+}
+
+.shapespace-row {
+  width: 80%;
+  margin: auto;
+}
+
+.shapespace-video {
+  /* override other styles to make responsive */
+  width: 120%    !important;
+  height: auto   !important;
+  margin-top: -6%;
+  margin-bottom: -6.5%;
+  margin-left: -10%;
+  margin-right: -10%
+}
+
+
+/*
+##### Thanks Section #####
+*/
+.thanks {
+  text-align: justify;
+  font-size: large;
+}
+
+/*
+##### Reference Section #####
+*/
+
+.ref {
+    max-width: 100%;
+    text-align: left;
+}
+
+.bibtex {
+    display: block;
+    background-color: #f4f4f4;
+    color: #555555;
+    scrollbar-base-color: #777672;
+    overflow-x: scroll;
+}
+
+pre {
+    margin: 2%;
+}
+
