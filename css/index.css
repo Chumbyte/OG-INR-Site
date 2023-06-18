@@ -227,14 +227,14 @@
   text-align: justify;
 }
 
-.divergence-expl {
+.og-inr-expl {
   /* margin-left: auto;
      margin-right: auto; */
   /* width: 100%; */
   text-align: center;
 }
 
-.divergence-expl-img {
+.og-inr-expl-img {
   display: block;
   max-width: 100%;
   margin: auto;
