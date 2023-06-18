@@ -236,6 +236,12 @@
 
 .og-inr-expl-img {
   display: block;
+  max-width: 960px;
+  margin: auto;
+}
+
+.res-img {
+  display: block;
   max-width: 100%;
   margin: auto;
 }
